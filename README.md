@@ -6,6 +6,7 @@ generation of SRI signatures.
 The following is the basic workflow of using this module. 
 
 ```powershell
+IWR -Uri https://raw.githubusercontent.com/Sage-Infrastructure-Solutions-Group-Inc/PowershellSRI/main/powershell-sri.psm1 -Outfile powershell-sri.psm1
 Import-Module powershell-sri.psm1
 Get-SRI -sourceUri  https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js -hashAlgo sha384
 ```
